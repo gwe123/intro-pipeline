@@ -28,6 +28,12 @@ pipeline {
         echo 'Continuing with deployment'
       }
     }
+    stage('Shared Lib') {
+         steps {
+             helloWorld("Jenkins")
+         }
+      }
+
   }
 
   environment {
