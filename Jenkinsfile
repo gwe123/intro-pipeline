@@ -1,3 +1,5 @@
+
+library 'SharedLibs'
 pipeline {
   agent {
     docker {
@@ -27,6 +29,12 @@ pipeline {
       }
     }
   }
+  stage('Shared Lib') {
+         steps {
+             helloWorld("Jenkins")
+         }
+      }
+
   environment {
     MY_NAME = 'Greg'
     TEST_USER = credentials('test-user')
