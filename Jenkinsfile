@@ -11,6 +11,8 @@ pipeline {
         echo "Hello, ${MY_NAME}!"
         sh 'java -version'
         sh 'mvn -v'
+        echo "${TEST_USER_USR}"
+        echo "${TEST_USER_PSW}"
       }
     }
   }
