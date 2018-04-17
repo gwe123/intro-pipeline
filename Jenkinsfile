@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Hello, world!'
         sh 'java -version'
+        sh 'sh \'mvn -v\''
       }
     }
   }
