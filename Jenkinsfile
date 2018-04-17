@@ -14,4 +14,7 @@ pipeline {
       }
     }
   }
+  environment {
+    MY_NAME = '"Greg"'
+  }
 }
