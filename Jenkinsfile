@@ -8,13 +8,13 @@ pipeline {
   stages {
     stage('say-hello') {
       steps {
-        echo 'Hello, world!'
+        echo "Hello, ${MY_NAME}!"
         sh 'java -version'
         sh 'mvn -v'
       }
     }
   }
   environment {
-    MY_NAME = '"Greg"'
+    MY_NAME = 'Greg'
   }
 }
